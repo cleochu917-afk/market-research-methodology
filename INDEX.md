@@ -1,3 +1,4 @@
+[INDEX (1).md](https://github.com/user-attachments/files/28638530/INDEX.1.md)
 # Method Bank — INDEX
 ## Investigation design reference for product and experience research
 
@@ -137,6 +138,55 @@ A method enters the bank when applied in a project and documented with enough op
 
 ---
 
-*Sources: Creswell & Poth (2018) Qualitative Inquiry and Research Design; Denzin & Lincoln (2018) SAGE Handbook of Qualitative Research; NNGroup 20-method taxonomy (Rohrer, 2022); Kozinets (2020) Netnography; Yin (2018) Case Study Research; Glaser & Strauss (1967) Discovery of Grounded Theory; van Manen (1990) Researching Lived Experience; Moustakas (1994) Phenomenological Research Methods.*
+## Production calibration references — apply during Stage 4+5
 
-*Index initiated June 2026. Documented entries: phenomenological netnography, ESM diary study, retrospective interview.*
+These are not method profiles. They are calibration tools for practitioners producing the three terminal documents (Brand System, Product Specification, Strategic Direction). They answer "what does correct look like?" for two production decisions where vagueness is the most common failure mode.
+
+---
+
+### HMW statement scoping
+
+**What it calibrates:** whether a How Might We statement is correctly scoped — broad enough to invite multiple concept directions, narrow enough to rule out irrelevant ones.
+
+**The failure modes and their signals:**
+
+| Type | Signal | Example |
+|---|---|---|
+| Too broad | Any concept direction can answer it | "How might we improve the food noise experience?" |
+| Too narrow | Implies a specific solution | "How might we add a 30-second voice note to the craving capture flow?" |
+| Correct scope | 3 distinct directions could answer it, but irrelevant ones cannot | "How might we give the energy of a craving somewhere to go without requiring the person to eat or suppress?" |
+
+**The three-direction test:** before finalising a HMW statement, sketch three genuinely different directions that answer it. If you cannot produce three, the statement is too narrow. If any direction in the product space could answer it, the statement is too broad.
+
+**Scope signals to watch for:**
+- Contains a solution noun (voice note, notification, session) → too narrow, remove the noun
+- Contains only the problem domain with no constraint ("food noise", "the experience") → too broad, add one constraint from the Stage 3 design principles
+- Contains a verb that implies a specific interaction (add, build, create, send) → too narrow, replace with an outcome verb (give, enable, allow, make possible)
+
+---
+
+### Concept direction distinctness
+
+**What it calibrates:** whether three concept directions are genuinely distinct or are surface treatment variations of the same direction. The most common failure mode in Section 02 of the Strategic Direction.
+
+**The test:** state each direction's position on the key Stage 3 tensions. If two directions take the same position on all key tensions and differ only in execution style, they are not distinct — they are one direction with two visual treatments.
+
+**The difference:**
+
+*Surface treatment variation (not distinct):*
+- Direction A: "The product feels like a calm companion — ambient, soft, present"
+- Direction B: "The product feels like a focused tool — minimal, direct, efficient"
+Both take the same position on all Stage 3 tensions. They differ in aesthetic register only. Collapse to one direction and develop a genuinely different third.
+
+*Genuinely distinct directions:*
+- Direction A: Positions food noise as a signal worth listening to — the product amplifies and names it before redirecting. Leans into the ego-syntonic tension: the craving has something to say.
+- Direction B: Positions food noise as an energy state the body is in — the product provides a physical outlet that receives the energy without interpretation. Leans into the bodily-onset finding: the body moved before the mind registered it.
+- Direction C: Positions food noise as a social experience disguised as a private one — the product makes the witnessed dimension explicit. Leans into the privacy/witnessing tension.
+
+Each takes a different position on a different Stage 3 tension. Each implies different interaction design, different copy register, and different product architecture. A team selecting between them is making a real product decision — not choosing an aesthetic.
+
+**Practical check:** for each direction, ask "which Stage 3 tension does this lean into, and how?" If the answer is the same for two directions, they are not distinct.
+
+---
+
+*Production calibration section added June 2026. References the TRANSLATE_MATERIALISE_SKILL.md production discipline for Stage 4+5. HMW scoping standard grounded in IDEO design thinking methodology. Concept direction distinctness standard grounded in D&AD professional award criterion and Stage 3 tensions framework.*
