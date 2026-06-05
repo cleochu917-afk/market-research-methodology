@@ -1,3 +1,4 @@
+[PRODUCE_STRUCTURED_INSIGHTS_SKILL (1).md](https://github.com/user-attachments/files/28642381/PRODUCE_STRUCTURED_INSIGHTS_SKILL.1.md)
 ---
 name: produce-structured-insights
 description: Use this skill when producing structured insights from fieldwork — running active data collection, synthesising evidence into named insights, and producing the terminal outputs that feed Stage 4. Follows Stage 2 Design How to Investigate It. Precedes Stage 4 Translate Insight into Decisions.
@@ -7,7 +8,7 @@ description: Use this skill when producing structured insights from fieldwork �
 
 **Phase position:** Follows Stage 2 (Design How to Investigate It). The Stage 2 composite summary and participant screener must exist before Stage 3 begins. Precedes Stage 4 — Translate Insight into Decisions.
 **Role perspective:** UX owns fieldwork execution and participant logistics. Experience design owns qualitative synthesis and insight production. Full team owns convergence sprint and terminal outputs.
-**Output:** Three working files — fieldwork (participant selection, EMA design, instruments, IDI guide, rapid prototyping), synthesis (cultural analysis, QES log, affinity diagram, quantitative integration, journey map, usability report), convergence (sprint, A/B backlog review, terminal outputs).
+**Output:** Three working files — fieldwork (participant selection, EMA design, instruments, IDI guide, rapid prototyping), synthesis (cultural analysis, QES log, affinity diagram, quantitative integration, journey map, usability report), convergence (sprint, rapid prototype backlog review, terminal outputs).
 **A/B metrics:** Consult `/method-bank/ab-metrics-bank.md` before designing any rapid prototype test. Metric selection depends on product type and the decision being resolved.
 
 ---
@@ -88,26 +89,29 @@ One row per capture. Fields: Capture ID (participant + day + sequential number) 
 
 ---
 
-### Self-documentation instruments (Tab 03)
+### Instruments (Tab 03)
 
-Four instruments sent on specific days during the 7-day capture period. Primary instruments must run. Secondary instruments add depth — drop them before trimming IDI phases.
+**Instruments are selected per study, not fixed.** The four instruments documented in the fieldwork file (collage, attention map, card sort, environment walkthrough) are the selection made for this specific study. A different research question requires a different selection. See `/method-bank/fieldwork-instruments.md` for the full bank and `/method-bank/INDEX.md` for the selection framework.
 
-**Instrument 1 — Food noise collage (Primary, Day 2):**
-"Find 5–8 images that capture what food noise feels like for you. They don't have to be about food. Arrange them however makes sense. Send us the result with a voice note explaining why you chose each one."
-Documentation: image set (no filtering) · voice note transcript verbatim (including hesitations) · key vocabulary — words the participant uses that differ from the research team's vocabulary (candidate language additions) · researcher note written immediately after reviewing.
+**Selection procedure — run before specifying any instrument:**
 
-**Instrument 2 — Food attention map (Secondary, Day 4):**
-"Draw or map where your food attention went today. Not what you ate — where your mind went. When did it start, what triggered it, where did it lead, how did it end or not end?"
-Documentation: map image (scan/photo) · structural description (linear/cyclical/episodic/continuous — researcher's plain description, not the image itself) · trigger sequence (what the participant drew or described happening before the first peak) · comparison to event-captures from the same day (discrepancies flag for IDI probe).
+Four categories. One suitability question per category. If yes — at least one instrument from that category is required.
 
-**Instrument 3 — Values card sort (Secondary, Day 5):**
-16 words sorted into "feels true / partly true / doesn't fit." Then top three chosen with voice note explanation.
-Card set: Pleasure · Control · Ritual · Escape · Reward · Comfort · Habit · Identity · Anxiety · Anticipation · Rebellion · Loneliness · Creativity · Memory · Restlessness · Celebration
-Documentation: groupings (exact placement — never recategorise) · top three with voice note transcripts · rejected words (analytically as important as claimed words — they define the identity boundary the product must not cross).
+| Category | Suitability question | Produces |
+|---|---|---|
+| **SAY** | Does the research question require how participants consciously position themselves — stated values, vocabulary, self-report? | Conscious attitudes, participant vocabulary, self-positioning |
+| **DO** | Does it require actual behaviour in context or temporal/spatial distribution of the phenomenon? | Behaviour in situ, environmental affordances, temporal pattern |
+| **MAKE** | Is the phenomenon pre-verbal, somatic, or identity-adjacent — below the threshold of easy articulation? | Tacit knowledge externalised in non-verbal form |
+| **ENACT** | Is the phenomenon situational or decision-dependent — occurring only under specific conditions? | Edge cases, contextual breakdowns, embodied responses |
 
-**Instrument 4 — Environment walkthrough (Primary, Day 1–2):**
-"Show us where you usually are when [phenomenon] hits. A short video walk — don't narrate, just show us the space."
-Documentation: video timestamp annotations (specific environmental affordances noted with timestamps) · proximity map (spatial relationship between workspace and food access) · unexpected findings (priority flag for IDI probe and QES tension log).
+*SAY and MAKE are not interchangeable. SAY reaches what participants can articulate. MAKE reaches what they cannot. If the phenomenon has both dimensions, both categories are required.*
+
+*ENACT instruments produce directional, not evidential data. Always pair with event-contingent capture for real-time evidence. Roleplaying and bodystorming run within IDI Phase 3 — they are not standalone sent instruments.*
+
+**For each selected instrument, document:**
+Prompt (exact wording sent to participant) · What it produces (one sentence) · Documentation format (fields captured, verbatim requirement) · Which synthesis output it feeds · Timing within the study period.
+
+**Primary instruments must run.** Secondary instruments add depth — drop before trimming IDI phases if time-constrained. Fewer instruments means lower confidence tiers on the findings they would have produced — not shortcuts in analysis.
 
 **IDI documentation format — complete within 2 hours of session close:**
 Transcript (verbatim — include [pause Xs], [incomplete], [laughs]) · researcher post-session note (written before reading transcript: what surprised you, what the participant corrected) · member check result (what description was presented in Phase 4, participant response: recognition/partial/correction, and the specific correction if made — corrections enter the QES log as tension flags) · capture-to-IDI links (what each IDI probe added that the raw capture could not show).
@@ -150,33 +154,33 @@ Present one or two descriptions of the experience from the Stage 2 composite sum
 
 ---
 
-### Rapid prototyping + A/B (Tab 05)
+### Rapid prototyping (Tab 05)
 
-A rapid prototype answers one high-stakes product decision with behavioural evidence — minimum build to generate a signal. Where the interaction exists in an analogous product, isolate that specific feature and test it there. Not the whole app.
+A rapid prototype comparison exposes a small number of participants to two variants and collects observational data on which variant produced the better behavioural signal. This is not an A/B test — there is no live product, no real user base, and no statistical significance. Output is a directional finding, not a test result. Real A/B tests run in Stage 6 against a live product.
 
 **Source of high-risk decisions:**
 - Stage 1 Constraints document ("Will not / Should not" entries made on research assumptions)
 - Stage 1 Founding Content Brief priority matrix (P1 and P2 impact assumptions)
-- Stage 3 design principles where evidence is insufficient to commit without a test
-
-**Metrics framework:** Select from `/method-bank/ab-metrics-bank.md` based on product type and the specific decision being resolved. Every test requires: one primary metric, 2–4 secondary metrics that explain why the primary moved or didn't, and at least one guardrail metric with a hard threshold that stops the test if crossed. A guardrail firing is not a failed test — it is a finding.
+- Stage 3 design principles where evidence is insufficient to indicate direction without a comparison
 
 **Feasibility test — run first (days 1–3):**
-Before any variant test, confirm the capture mechanism works. If median daily captures fall below the minimum threshold, diagnose the failure mode before proceeding. All subsequent tests are invalid if the capture mechanism is not working.
+Single primary: event-contingent capture compliance (captures initiated per participant per day). If median daily captures fall below the minimum threshold, diagnose the failure mode before proceeding — all subsequent comparisons are invalid without a functioning capture mechanism.
 
-**Data log — record without interpretation:**
-- Primary metric value per variant (exact — no rounding)
-- % change (variant B minus variant A, signed)
-- Direction at this sample size (B > A / B < A / no meaningful difference)
+**Observation criteria — one set per comparison:**
+Each comparison resolves a different decision. Select observation criteria from `/method-bank/ab-metrics-bank.md` matched to the specific decision. Every comparison requires: one primary criterion, 2–4 secondary criteria explaining why the primary moved or didn't, one guardrail with a hard threshold. Two primary criteria produces an unresolvable result — one primary only.
+
+**Observation log — record without interpretation:**
+- Primary criterion observation per variant (exact — no rounding)
+- Direction (variant B produced more of the target behaviour / less / no meaningful difference)
 - Effect size (substantial / moderate / minimal / noise)
-- Participant count contributing to this signal
-- Secondary metrics per variant
-- Guardrail metric per variant — flag if threshold crossed
+- Participant count contributing to this observation
+- Secondary criteria per variant
+- Guardrail per variant — flag if threshold crossed
 
-**Synthesis format — written after data collection closes:**
-Variant [B/A] indicated [direction] on [primary metric] by [% change], suggesting [what the behavioural difference means]. [Secondary metric finding] supports/contradicts/qualifies this. This [confirms/complicates/revises] the hypothesis that [original decision]. Decision: [Committed / Revise and retest / Escalate to Stage 6].
+**Synthesis format — written after observation closes:**
+Variant [B/A] showed more of the target behaviour than [A/B] on [primary criterion] by [difference], suggesting [what the behavioural difference means]. [Secondary criterion finding] supports/contradicts/qualifies this. This [confirms/complicates/revises] the hypothesis that [original decision]. Directional finding: [Committed / Revise and retest / Escalate to Stage 6 for real A/B test against live product].
 
-The decision is mandatory. If data is insufficient, state what additional evidence would reduce uncertainty and at what stage to seek it.
+The directional finding is mandatory. If observation is insufficient, state what additional evidence would reduce uncertainty and at what stage to seek it.
 
 ---
 
